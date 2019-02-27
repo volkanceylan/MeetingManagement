@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup>
     <TypeScriptTarget>ES5</TypeScriptTarget>
@@ -1168,14 +1169,6 @@
     <TypeScriptCompile Include="Modules\Administration\User\Authentication\Authorization.ts" />
     <TypeScriptCompile Include="Modules\Administration\User\UserGrid.ts" />
     <TypeScriptCompile Include="Modules\Administration\User\UserDialog.ts" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="fonts\Simple-Line-Icons.woff2" />
     <Content Include="fonts\Simple-Line-Icons.woff" />
     <Content Include="fonts\Simple-Line-Icons.ttf" />
@@ -1190,6 +1183,14 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Modules\Common\Imports\ServerTypings\ServerTypings.log">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1527,33 +1528,63 @@
     <TypeScriptCompile Include="Scripts\typings\sortablejs\sortablejs.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\toastr\toastr.d.ts" />
     <Content Include="Modules\Meeting\AgendaType\AgendaTypeIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.AgendaTypeForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Modules\Meeting\AgendaType\AgendaTypeGrid.ts" />
     <TypeScriptCompile Include="Modules\Meeting\AgendaType\AgendaTypeDialog.ts" />
     <Content Include="Modules\Meeting\Contact\ContactIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.ContactForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Modules\Meeting\Contact\ContactGrid.ts" />
     <TypeScriptCompile Include="Modules\Meeting\Contact\ContactDialog.ts" />
     <Content Include="Modules\Meeting\Location\LocationIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.LocationForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Modules\Meeting\Location\LocationGrid.ts" />
     <TypeScriptCompile Include="Modules\Meeting\Location\LocationDialog.ts" />
     <Content Include="Modules\Meeting\MeetingType\MeetingTypeIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.MeetingTypeForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Modules\Meeting\MeetingType\MeetingTypeGrid.ts" />
     <TypeScriptCompile Include="Modules\Meeting\MeetingType\MeetingTypeDialog.ts" />
     <Content Include="Modules\Meeting\Unit\UnitIndex.cshtml" />
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitRow.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitService.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
-    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitForm.ts">  <DependentUpon>ServerTypings.tt</DependentUpon></TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitRow.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitService.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Modules\Common\Imports\ServerTypings\Meeting.UnitForm.ts">
+      <DependentUpon>ServerTypings.tt</DependentUpon>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="Modules\Meeting\Unit\UnitGrid.ts" />
     <TypeScriptCompile Include="Modules\Meeting\Unit\UnitDialog.ts" />
   </ItemGroup>
